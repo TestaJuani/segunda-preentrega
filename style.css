@@ -1,0 +1,526 @@
+ * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* HEADER */
+  #header {
+    background-image: url(../bootstrap-css/multimedia/imagenes/banner.jpg);
+    height: 30em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    opacity: 0.8;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .nav-header {
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  
+  .container-links {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .fa-solid {
+    color: white
+  }
+  
+  .links{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 1000;
+    color: #fff;
+    padding-bottom: 5px;
+  }
+  
+  .links:hover{
+    border-bottom: 2px solid white;
+    color: white;
+  }
+  
+  .logo-nav-footer {
+    border-radius: 50%;
+}
+  
+  /*MEDIA QUERY*/
+  
+  @media screen and (max-width:648px){
+    .nav-header {
+      height: 30em;
+    }
+    .container-links{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    
+  }
+  
+  /* FIN HEADER*/
+  
+  
+  
+  
+  
+  /* INICIO INDEX CSS*/
+  
+  
+  
+  /*MENU-GALERIA*/
+  
+  .menu-galeria {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu-img1 {
+    width: 50%;
+    height: 20em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    animation: changeImg 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    
+  }
+  
+  @keyframes changeImg {
+    0%{
+      background-image: url(../bootstrap-css/multimedia/imagenes/bacon-menu.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    50%{
+      background-image: url(../bootstrap-css/multimedia//imagenes/bacon\ ab.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    100%{
+      background-image: url(../bootstrap-css/multimedia/imagenes/bacon-menu.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+  }
+  
+  .menu-img2 {
+    width: 50%;
+    height: 20em;
+    background-image: url(../bootstrap-css/multimedia/imagenes/royale-inicio.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .menu-img2:hover{
+    animation: changeImg2 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes changeImg2 {
+    0%{
+      background-image: url(../bootstrap-css/multimedia/imagenes/royale-inicio.jpeg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    25%{
+      background-image: url(../bootstrap-css/multimedia/imagenes/cheese.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    50%{
+      background-image: url(../bootstrap-css/multimedia/imagenes/bg\ mc.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    100%{
+      background-image: url(../bootstrap-css/multimedia/imagenes/onion\ .png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    
+  }
+  
+  .botton-links {
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-family: "Neutra-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 1s;
+  }
+  
+  .botton-links:hover{
+    background-color: rgba(255, 255, 255, 0.713);
+  }
+  
+  /*FIN MENU - GALERIA*/
+  
+  /*NOSOTROS*/
+  .titulos-index {
+    font-family: "Neutra-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+  
+  #nosotros {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.8;
+  }
+  
+  #logo-nosotros {
+    border-radius: 50%;
+  }
+  
+  #titulo-nosotros {
+    margin-top: 15px;
+    font-family: "Neutra-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+  
+  #parrafo-nosotros {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+  }
+  
+  /*FIN NOSOTROS*/
+  
+  /*MAPA*/
+  
+  .container-mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+  }
+  
+  .mapa {
+    width: 80%;
+    height: 20em;
+    margin: 25px;
+  }
+  
+  /*FIN MAPA*/
+  
+  
+  /* FIN INDEX CSS*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*INICIO MENU CSS*/
+  
+.container-titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.titulos-secciones {
+  width: 60%;
+  text-align: center;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  opacity: 0.8;
+  padding-bottom: 2em;
+  border-bottom: 2px solid black;
+}
+
+.container-hamburguesas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.container-card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,.125);
+  margin: 5px;
+  width: 18em;
+}
+  /* FIN MENU CSS*/
+  
+  
+  
+  
+  
+  /*INICIO CONTACTO CSS*/
+  
+  
+  /* Section primera*/
+  
+  .section-primera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+  }
+  
+  .titulo-section-primera {
+    font-family: "Neutra-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .parrafos {
+    font-family: "Times New Roman", Times, serif;
+  }
+  #direccion {
+    margin-bottom: 20px;
+  }
+  
+  .mapa {
+    width: 80%;
+    height: 20em;
+    margin-bottom: 5em;
+  }
+  
+  /*Section segunda*/
+  
+  .section-segunda {
+    padding: 4em;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .titulos-section-segunda {
+    margin-bottom: 7px;
+    margin-top: 10px;
+    font-family: "Neutra-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  
+  
+  
+  
+  
+  /*FIN CONTACTO CSS*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*INICIO GALERIA CSS*/
+  
+  
+  .container-video{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5em;
+  }
+
+  video{
+    height: 25em;
+    padding:2px;
+  }
+  
+  /*FIN GALERIA CSS*/
+  
+  
+  
+  
+  /* INICIO CARRITO CSS */
+  
+  
+  /* SECTION */
+  
+  .container-card-carrito{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 5px;
+    width: 20em;
+  }
+
+  .contenido-card{
+      display: flex;
+      flex-direction: column;
+  }
+
+  
+  .agregar{
+      padding: 2px;
+  }
+  .quitar{
+      padding: 0;
+      text-align: end;
+  }
+
+
+  .resumen-pedido{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: #fff;
+  }
+  /* FIN CARRITO CSS */
+  
+
+
+
+  /*INICIO CHEESE*/
+.container-titulo-seleccionada{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.titulo-seleccionada{
+  width: 100%;
+  text-align: center;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  opacity: 0.8;
+  padding: 15px;
+}
+
+  .container-hamburguesas-seleccionadas{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.container-card-seleccionada{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,.125);
+  width: 25em;
+}
+
+.container-inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-valor-cantidad{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.container-number{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.input-number{
+  width: 15%;
+}
+
+
+  /* FIN CHEESE*/
+  
+  
+  
+  
+  /*FOOTER GENERAL*/
+  
+  #footer {
+    height: 10em;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: #fff;
+  }
+  
+  #lista-footer {
+    font-family: "Neutra-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 0.8rem;
+  }
+  .fa-brands,
+  .fa-instagram {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  
+  .container-parrafos-footer {
+    text-align: center;
+    margin-left: 1em;
+  }
+  
+  .parrafos-footer {
+    font-family: "Neutra-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding-top: 10px;
+  }
+  .fa-solid,
+  .fa-location-dot {
+    font-size: 1.2rem;
+    margin-right: 2px;
+  }
+  
+  /* FIN FOOTER*/
+  
