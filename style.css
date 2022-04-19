@@ -284,7 +284,13 @@
   border: 1px solid rgba(0,0,0,.125);
   margin: 5px;
   width: 18em;
+  transition: 1s;
 }
+
+.container-card:hover{
+  transform: translateY(8px);
+}
+
   /* FIN MENU CSS*/
   
   
