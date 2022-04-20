@@ -1,0 +1,21 @@
+@import "../base/variables";
+
+/*INICIO GALERIA CSS*/
+  
+  
+.container-video{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: $margen-entre-section;
+
+    video{
+        height: 25em;
+        padding:2px;
+      }
+  }
+
+  
+  
+  /*FIN GALERIA CSS*/

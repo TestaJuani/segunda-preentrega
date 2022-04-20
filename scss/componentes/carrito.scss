@@ -1,0 +1,43 @@
+@import "../base/variables";
+
+
+
+/* INICIO CARRITO CSS */
+  
+  
+  /* SECTION */
+  
+  .container-card-carrito{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 5px;
+    width: 20em;
+
+    .card-body{
+
+        .agregar{
+            padding: 2px;
+            list-style: $iconos-ul;
+        }
+        .quitar{
+            padding: 0;
+            text-align: end;
+            list-style: $iconos-ul;
+        }
+    }
+  
+  }
+
+  .resumen-pedido{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: #fff;
+  }
+  /* FIN CARRITO CSS */
+  
