@@ -6,25 +6,26 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: $margen-entre-section;
+    margin-bottom: $margen-entre-section;
 
     .titulo-seleccionada{
         width: 100%;
         text-align: center;
-        font-family: "Neutra-Bold", sans-serif;
-        font-weight: 800;
-        font-size: 2rem;
+        font-family: $bg-fuente-titulos;
+        font-weight: $bg-negrita;
+        font-size: nth($size,4);
         opacity: 0.8;
         padding: 15px;
       }
+      
 }
 
 
 .container-hamburguesas-seleccionadas{
     display: flex;
     justify-content: center;
-    padding-bottom: 5em;
+    padding-bottom: $margen-entre-section;
 
     .container-card-seleccionada{
         display: flex;
