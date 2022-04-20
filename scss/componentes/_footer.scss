@@ -1,0 +1,56 @@
+@import "../base/variables";
+@import "../base/listas";
+
+
+
+/*FOOTER GENERAL*/
+  
+#footer {
+    height: 10em;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: #fff;
+    nav{
+        #lista-footer{
+            font-family: $bg-fuente-titulos;
+            font-weight: $bg-negrita;
+            font-size: nth($size, 1);
+            list-style: $iconos-ul;
+            li{
+                i{
+                    margin-top: 10px;
+                    color: #fff;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .logo-nav-footer{
+        border-radius: 50%;
+    }
+    .container-parrafos-footer {
+        text-align: center;
+        margin-left: 1em;
+        .parrafos-footer {
+            font-family: $bg-fuente-titulos;
+            font-weight: 700;
+            font-size: nth($size, 1);
+            padding-top: 10px;
+          }
+          .fa-solid,
+         .fa-location-dot { 
+            font-size: nth($size, 3);
+            margin-right: 2px;
+        }
+      }
+  }
+  
+  
+  
+  
+  
+  
+  /* FIN FOOTER*/

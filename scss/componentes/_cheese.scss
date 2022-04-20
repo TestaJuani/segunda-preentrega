@@ -1,0 +1,69 @@
+ @import "../base/listas";
+ @import "../base/variables";
+ 
+ /*INICIO CHEESE*/
+ .container-titulo-seleccionada{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+    .titulo-seleccionada{
+        width: 100%;
+        text-align: center;
+        font-family: "Neutra-Bold", sans-serif;
+        font-weight: 800;
+        font-size: 2rem;
+        opacity: 0.8;
+        padding: 15px;
+      }
+}
+
+
+.container-hamburguesas-seleccionadas{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5em;
+
+    .container-card-seleccionada{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(0,0,0,.125);
+        width: 25em;
+
+        .container-inputs{
+            display: flex;
+            flex-direction: column;
+          }
+      }
+      .container-valor-cantidad{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+        .container-number{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            .input-number{
+                width: 15%;
+              }
+          }
+      }
+      
+}
+
+
+  /* FIN CHEESE*/
+
+
+
+
+
+
+
+
+
+

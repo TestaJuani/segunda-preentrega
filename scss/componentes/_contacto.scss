@@ -1,0 +1,63 @@
+ @import "../base/variables";
+ @import "../base/listas";
+ 
+ 
+ /*INICIO CONTACTO CSS*/
+  
+  
+  /* Section primera*/
+  
+  .section-primera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: $margen-entre-section;
+
+    .titulo-section-primera {
+        font-family: $bg-fuente-titulos;
+        font-weight: $bg-negrita;
+        font-size: nth($size, 3);
+        margin-bottom: 10px;
+      }
+  }
+  
+  
+  
+  .parrafos {
+    font-family: "Times New Roman", Times, serif;
+  }
+  #direccion {
+    margin-bottom: 20px;
+  }
+  
+  .mapa {
+    width: 80%;
+    height: 20em;
+    margin-bottom: $margen-entre-section;
+  }
+  
+  /*Section segunda*/
+  
+  .section-segunda {
+    padding: 4em;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .titulos-section-segunda {
+    margin-bottom: 7px;
+    margin-top: 10px;
+    font-family: $bg-fuente-titulos;
+    font-weight: 700;
+    font-size: nth($size, 1);
+  }
+  
+  
+  
+  
+  
+  /*FIN CONTACTO CSS*/

@@ -1,0 +1,427 @@
+/* ICONOS LISTA*/
+/* TITULOS SECCIONES*/
+/*MARGIN ENTRE ETIQUETAS SECTION*/
+/*HEADER */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../multimedia/imagenes/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 30em;
+}
+header nav {
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+header nav ul li .links {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 1000;
+  color: #fff;
+  padding-bottom: 5px;
+}
+header nav ul li .links:hover {
+  border-bottom: 2px solid white;
+  color: white;
+}
+header nav ul li .fa-solid {
+  color: white;
+}
+header nav ul li .logo-nav-footer {
+  border-radius: 50%;
+}
+@media screen and (max-width: 648px) {
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 648px) {
+  header nav {
+    height: 30em;
+  }
+}
+
+/*FIN HEADER*/
+/* ICONOS LISTA*/
+/* TITULOS SECCIONES*/
+/*MARGIN ENTRE ETIQUETAS SECTION*/
+/*INDEX.HTML*/
+.menu-galeria {
+  display: flex;
+  flex-direction: row;
+}
+.menu-galeria .menu-img1 {
+  width: 50%;
+  height: 20em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: changeImg 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes changeImg {
+  0% {
+    background-image: url(../multimedia/imagenes/bacon-menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  50% {
+    background-image: url(../multimedia//imagenes/bacon\ ab.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  100% {
+    background-image: url(../multimedia/imagenes/bacon-menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+.menu-galeria .menu-img2 {
+  width: 50%;
+  height: 20em;
+  background-image: url(../multimedia/imagenes/royale-inicio.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.menu-galeria .menu-img2:hover {
+  animation: changeImg2 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes changeImg2 {
+  0% {
+    background-image: url(../multimedia/imagenes/royale-inicio.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  25% {
+    background-image: url(../multimedia/imagenes/cheese.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  50% {
+    background-image: url(../multimedia/imagenes/bg\ mc.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  100% {
+    background-image: url(../multimedia/imagenes/onion\ .png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+#nosotros {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.8;
+}
+#nosotros #logo-nosotros {
+  border-radius: 50%;
+}
+#nosotros #titulo-nosotros {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+}
+#nosotros .titulos-index {
+  font-size: 1.2rem;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+}
+#nosotros #parrafo-nosotros {
+  display: flex;
+  text-align: center;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.container-mapa {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-mapa .titulos-index {
+  font-size: 1.2rem;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+}
+.container-mapa .mapa {
+  width: 80%;
+  height: 20em;
+  margin: 25px;
+}
+
+/* FIN INDEX.HTML*/
+/* ICONOS LISTA*/
+/* TITULOS SECCIONES*/
+/*MARGIN ENTRE ETIQUETAS SECTION*/
+/*MENU.HMTL*/
+.container-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.container-titulo .titulos-secciones {
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  opacity: 0.8;
+  padding-bottom: 2em;
+  border-bottom: 2px solid black;
+}
+
+.container-hamburguesas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+.container-hamburguesas .container-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 5px;
+  width: 18em;
+  transition: 1s;
+}
+.container-hamburguesas .container-card:hover {
+  transform: translateY(8px);
+}
+
+/*FIN MENU HTML*/
+/* ICONOS LISTA*/
+/* TITULOS SECCIONES*/
+/*MARGIN ENTRE ETIQUETAS SECTION*/
+/*INICIO CONTACTO CSS*/
+/* Section primera*/
+.section-primera {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+}
+.section-primera .titulo-section-primera {
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.parrafos {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#direccion {
+  margin-bottom: 20px;
+}
+
+.mapa {
+  width: 80%;
+  height: 20em;
+  margin-bottom: 5em;
+}
+
+/*Section segunda*/
+.section-segunda {
+  padding: 4em;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titulos-section-segunda {
+  margin-bottom: 7px;
+  margin-top: 10px;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/*FIN CONTACTO CSS*/
+/* ICONOS LISTA*/
+/* TITULOS SECCIONES*/
+/*MARGIN ENTRE ETIQUETAS SECTION*/
+/*INICIO GALERIA CSS*/
+.container-video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5em;
+}
+.container-video video {
+  height: 25em;
+  padding: 2px;
+}
+
+/*FIN GALERIA CSS*/
+/* ICONOS LISTA*/
+/* TITULOS SECCIONES*/
+/*MARGIN ENTRE ETIQUETAS SECTION*/
+/* INICIO CARRITO CSS */
+/* SECTION */
+.container-card-carrito {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 5px;
+  width: 20em;
+}
+.container-card-carrito .card-body .agregar {
+  padding: 2px;
+  list-style: none;
+}
+.container-card-carrito .card-body .quitar {
+  padding: 0;
+  text-align: end;
+  list-style: none;
+}
+
+.resumen-pedido {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.904);
+  color: #fff;
+}
+
+/* FIN CARRITO CSS */
+/* ICONOS LISTA*/
+/* TITULOS SECCIONES*/
+/*MARGIN ENTRE ETIQUETAS SECTION*/
+/*INICIO CHEESE*/
+.container-titulo-seleccionada {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.container-titulo-seleccionada .titulo-seleccionada {
+  width: 100%;
+  text-align: center;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  opacity: 0.8;
+  padding: 15px;
+}
+
+.container-hamburguesas-seleccionadas {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+.container-hamburguesas-seleccionadas .container-card-seleccionada {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 25em;
+}
+.container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs {
+  display: flex;
+  flex-direction: column;
+}
+.container-hamburguesas-seleccionadas .container-valor-cantidad {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.container-hamburguesas-seleccionadas .container-valor-cantidad .container-number {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container-hamburguesas-seleccionadas .container-valor-cantidad .container-number .input-number {
+  width: 15%;
+}
+
+/* FIN CHEESE*/
+/* ICONOS LISTA*/
+/* TITULOS SECCIONES*/
+/*MARGIN ENTRE ETIQUETAS SECTION*/
+/*FOOTER GENERAL*/
+#footer {
+  height: 10em;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.904);
+  color: #fff;
+}
+#footer nav #lista-footer {
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  list-style: none;
+}
+#footer nav #lista-footer li i {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.8rem;
+}
+#footer .logo-nav-footer {
+  border-radius: 50%;
+}
+#footer .container-parrafos-footer {
+  text-align: center;
+  margin-left: 1em;
+}
+#footer .container-parrafos-footer .parrafos-footer {
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
+#footer .container-parrafos-footer .fa-solid,
+#footer .container-parrafos-footer .fa-location-dot {
+  font-size: 1.2rem;
+  margin-right: 2px;
+}
+
+/* FIN FOOTER*/
+
+/*# sourceMappingURL=style.css.map */

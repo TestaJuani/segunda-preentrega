@@ -1,0 +1,65 @@
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/condicionales";
+
+/*HEADER */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-image: url(../multimedia/imagenes/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 30em;
+      nav {
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        
+      ul{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: $iconos-ul;
+          li{
+              .links{
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: nth($size, 1);
+                font-weight: 1000;
+                color: #fff;
+                padding-bottom: 5px;
+                &:hover{
+                    border-bottom: 2px solid white;
+                    color: white;
+                }
+            }
+                .fa-solid {
+                    color: white
+                  }
+                  .logo-nav-footer {
+                    border-radius: 50%;
+                } 
+            }
+            @media screen and (max-width:648px){
+              display: flex;
+              flex-direction: column;
+              padding: 20px;
+            }
+
+          }
+          @media screen and (max-width:648px){
+            height: 30em;
+          }        
+      }
+    }
+
+
+    /*FIN HEADER*/

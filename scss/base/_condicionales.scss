@@ -1,0 +1,9 @@
+@mixin navegador ($fixed){
+    margin-top: $fixed;
+
+
+    @if $fixed >= 25em {
+        position: fixed;
+        background-color: black;
+    }
+}
