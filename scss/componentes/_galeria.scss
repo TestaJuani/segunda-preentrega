@@ -1,12 +1,13 @@
 @import "../base/variables";
+@import "../base/mapas";
 
 /*INICIO GALERIA CSS*/
   
   
 .container-video{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: map-get($secciones-tarjetas, bg-display);
+    flex-wrap: map-get($secciones-tarjetas, bg-wrap);
+    justify-content: map-get($secciones-tarjetas, bg-jc);
     width: 100%;
     margin-bottom: $margen-entre-section;
 

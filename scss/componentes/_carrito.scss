@@ -1,4 +1,6 @@
 @import "../base/variables";
+@import "../base/mapas";
+@import "../base/extend";
 
 
 
@@ -6,11 +8,15 @@
   
   
   /* SECTION */
-  
+  .container-hamburguesas-carrito{
+    display: map-get($secciones-tarjetas, bg-display);
+    flex-wrap: map-get($secciones-tarjetas, bg-wrap);
+    justify-content: map-get($secciones-tarjetas, bg-jc);
+    padding-bottom: $margen-entre-section;
+
+
   .container-card-carrito{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(0,0,0,.125);
+    @extend %estructura-cards;
     margin: 5px;
     width: 20em;
 
@@ -28,16 +34,16 @@
     }
   
   }
-
-  .resumen-pedido{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    bottom: 0px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.904);
-    color: #fff;
-  }
+}
+.resumen-pedido{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.904);
+  color: #fff;
+}  
   /* FIN CARRITO CSS */
   

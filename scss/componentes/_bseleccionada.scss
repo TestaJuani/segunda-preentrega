@@ -1,5 +1,6 @@
  @import "../base/listas";
  @import "../base/variables";
+ @import "../base/extend";
  
  /*INICIO CHEESE*/
  .container-titulo-seleccionada{
@@ -28,10 +29,8 @@
     padding-bottom: $margen-entre-section;
 
     .container-card-seleccionada{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid rgba(0,0,0,.125);
-        width: 25em;
+      width: 25em;
+      @extend %estructura-cards;
 
         .container-inputs{
             display: flex;

@@ -206,21 +206,18 @@ header nav ul li .logo-nav-footer {
   border-bottom: 2px solid black;
 }
 
-.container-hamburguesas {
+.container-hamburguesas-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 5em;
 }
-.container-hamburguesas .container-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+.container-hamburguesas-menu .container-card {
   margin: 5px;
   width: 18em;
   transition: 1s;
 }
-.container-hamburguesas .container-card:hover {
+.container-hamburguesas-menu .container-card:hover {
   transform: translateY(8px);
 }
 
@@ -297,20 +294,29 @@ header nav ul li .logo-nav-footer {
 /* ICONOS LISTA*/
 /* TITULOS SECCIONES*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
-/* INICIO CARRITO CSS */
-/* SECTION */
-.container-card-carrito {
+.container-hamburguesas-seleccionadas .container-card-seleccionada, .container-hamburguesas-carrito .container-card-carrito, .container-hamburguesas-menu .container-card {
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* INICIO CARRITO CSS */
+/* SECTION */
+.container-hamburguesas-carrito {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+.container-hamburguesas-carrito .container-card-carrito {
   margin: 5px;
   width: 20em;
 }
-.container-card-carrito .card-body .agregar {
+.container-hamburguesas-carrito .container-card-carrito .card-body .agregar {
   padding: 2px;
   list-style: none;
 }
-.container-card-carrito .card-body .quitar {
+.container-hamburguesas-carrito .container-card-carrito .card-body .quitar {
   padding: 0;
   text-align: end;
   list-style: none;
@@ -331,6 +337,12 @@ header nav ul li .logo-nav-footer {
 /* ICONOS LISTA*/
 /* TITULOS SECCIONES*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
+.container-hamburguesas-seleccionadas .container-card-seleccionada, .container-hamburguesas-menu .container-card, .container-hamburguesas-carrito .container-card-carrito {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
 /*INICIO CHEESE*/
 .container-titulo-seleccionada {
   display: flex;
@@ -355,9 +367,6 @@ header nav ul li .logo-nav-footer {
   padding-bottom: 5em;
 }
 .container-hamburguesas-seleccionadas .container-card-seleccionada {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   width: 25em;
 }
 .container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs {

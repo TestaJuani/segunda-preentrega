@@ -1,5 +1,5 @@
 @import "../base/variables";
-
+@import "../base/mapas";
 
 
 /*MENU.HMTL*/
@@ -24,16 +24,14 @@
 
 
 
-.container-hamburguesas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.container-hamburguesas-menu{
+    display: map-get($secciones-tarjetas, bg-display);
+    flex-wrap: map-get($secciones-tarjetas, bg-wrap);
+    justify-content: map-get($secciones-tarjetas, bg-jc);
     padding-bottom: $margen-entre-section;
 
     .container-card{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid rgba(0,0,0,.125);
+        @extend %estructura-cards;
         margin: 5px;
         width: 18em;
         transition: 1s;
