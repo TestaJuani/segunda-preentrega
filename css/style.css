@@ -205,6 +205,16 @@ header nav ul li .logo-nav-footer {
   padding-bottom: 2em;
   border-bottom: 2px solid black;
 }
+@media screen and (max-width: 468px) {
+  .container-titulo .titulos-secciones {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container-titulo .titulos-secciones {
+    font-size: 15px;
+  }
+}
 
 .container-hamburguesas-menu {
   display: flex;
@@ -412,8 +422,28 @@ header nav ul li .logo-nav-footer {
   color: #fff;
   font-size: 1.8rem;
 }
+@media screen and (max-width: 468px) {
+  #footer nav #lista-footer li i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  #footer nav #lista-footer li i {
+    font-size: 1.2rem;
+  }
+}
 #footer .logo-nav-footer {
   border-radius: 50%;
+}
+@media screen and (max-width: 468px) {
+  #footer .logo-nav-footer {
+    width: 4em;
+  }
+}
+@media screen and (max-width: 300px) {
+  #footer .logo-nav-footer {
+    width: 3em;
+  }
 }
 #footer .container-parrafos-footer {
   text-align: center;
@@ -425,10 +455,32 @@ header nav ul li .logo-nav-footer {
   font-size: 0.8rem;
   padding-top: 10px;
 }
+@media screen and (max-width: 468px) {
+  #footer .container-parrafos-footer .parrafos-footer {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  #footer .container-parrafos-footer .parrafos-footer {
+    font-size: 0.5rem;
+  }
+}
 #footer .container-parrafos-footer .fa-solid,
 #footer .container-parrafos-footer .fa-location-dot {
   font-size: 1.2rem;
   margin-right: 2px;
+}
+@media screen and (max-width: 468px) {
+  #footer .container-parrafos-footer .fa-solid,
+#footer .container-parrafos-footer .fa-location-dot {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  #footer .container-parrafos-footer .fa-solid,
+#footer .container-parrafos-footer .fa-location-dot {
+    font-size: 0.8rem;
+  }
 }
 
 /* FIN FOOTER*/

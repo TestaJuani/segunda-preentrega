@@ -24,12 +24,28 @@
                     margin-top: 10px;
                     color: #fff;
                     font-size: 1.8rem;
+
+                    @media screen and (max-width:468px) {
+                        font-size: nth($size, 4);
+                    }
+        
+                    @media screen and (max-width:300px) {
+                        font-size: nth($size, 3);
+                    }
+                    
                 }
             }
         }
     }
     .logo-nav-footer{
         border-radius: 50%;
+
+        @media screen and (max-width:468px) {
+            width: 4em;
+        }
+        @media screen and (max-width:300px) {
+            width: 3em;
+        }
     }
     .container-parrafos-footer {
         text-align: center;
@@ -39,11 +55,28 @@
             font-weight: 700;
             font-size: nth($size, 1);
             padding-top: 10px;
+
+            @media screen and (max-width:468px) {
+                font-size: 0.7rem;
+            }
+
+            @media screen and (max-width:300px) {
+                font-size: 0.5rem;
+            }
           }
+          
           .fa-solid,
          .fa-location-dot { 
             font-size: nth($size, 3);
             margin-right: 2px;
+
+            @media screen and (max-width:468px) {
+                font-size: nth($size, 2);
+            }
+
+            @media screen and (max-width:300px) {
+                font-size: nth($size, 1);
+            }
         }
       }
   }
