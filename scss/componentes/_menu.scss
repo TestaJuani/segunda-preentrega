@@ -1,13 +1,13 @@
 @import "../base/variables";
 @import "../base/mapas";
+@import "../base/mixin";
 
 
 /*MENU.HMTL*/
 
 
 .container-titulo{
-    display: flex;
-    justify-content: center;
+    @include flexing(flex,center);
     margin-top: $margen-entre-section;
     margin-bottom:$margen-entre-section;
 
@@ -46,6 +46,12 @@
 
         &:hover{
             transform: translateY(8px);
+        }
+
+        .card-body{
+            .titulo-card{
+                font-size: 1.3rem;
+            }
         }
       }
 }

@@ -1,5 +1,6 @@
 @import "../base/variables";
 @import "../base/listas";
+@import "../base/mixin";
 
 
 /*INDEX.HTML*/
@@ -12,9 +13,8 @@
     .menu-img1 {
         width: 50%;
         height: 20em;
-        display: flex;
+        @include flexing(flex,center);
         align-items: flex-end;
-        justify-content: center;
         animation: changeImg 20s;
         animation-iteration-count: infinite;
         animation-timing-function:ease-in-out;
@@ -48,9 +48,8 @@
         background-position: 50% 50%;
         background-size: cover;
       
-        display: flex;
+        @include flexing(flex,center);    
         align-items: flex-end;
-        justify-content: center;    
     
       &:hover{
         animation: changeImg2 2s;
@@ -121,9 +120,8 @@
 
 .container-mapa {
     margin-top: $margen-entre-section;
-    display: flex;
+    @include flexing(flex,center);
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     .titulos-index {

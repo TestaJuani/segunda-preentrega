@@ -9,10 +9,10 @@
 
 header {
   background-image: url(../multimedia/imagenes/banner.jpg);
+  height: 30em;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  height: 30em;
 }
 header nav {
   color: white;
@@ -71,8 +71,8 @@ header nav ul li .logo-nav-footer {
   width: 50%;
   height: 20em;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
   animation: changeImg 20s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -105,8 +105,8 @@ header nav ul li .logo-nav-footer {
   background-position: 50% 50%;
   background-size: cover;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
 }
 .menu-galeria .menu-img2:hover {
   animation: changeImg2 2s;
@@ -170,8 +170,8 @@ header nav ul li .logo-nav-footer {
 .container-mapa {
   margin-top: 5em;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 .container-mapa .titulos-index {
@@ -230,6 +230,9 @@ header nav ul li .logo-nav-footer {
 .container-hamburguesas-menu .container-card:hover {
   transform: translateY(8px);
 }
+.container-hamburguesas-menu .container-card .card-body .titulo-card {
+  font-size: 1.3rem;
+}
 
 /*FIN MENU HTML*/
 /* ICONOS LISTA*/
@@ -239,8 +242,8 @@ header nav ul li .logo-nav-footer {
 /* Section primera*/
 .section-primera {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding-top: 5em;
 }
@@ -270,8 +273,8 @@ header nav ul li .logo-nav-footer {
   padding: 4em;
   background-color: rgb(233, 233, 233);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -321,6 +324,9 @@ header nav ul li .logo-nav-footer {
 .container-hamburguesas-carrito .container-card-carrito {
   margin: 5px;
   width: 20em;
+}
+.container-hamburguesas-carrito .container-card-carrito .card-body .titulo-card-menu {
+  font-size: 1.3rem;
 }
 .container-hamburguesas-carrito .container-card-carrito .card-body .agregar {
   padding: 2px;

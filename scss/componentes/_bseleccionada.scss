@@ -1,6 +1,7 @@
  @import "../base/listas";
  @import "../base/variables";
  @import "../base/extend";
+ @import "../base/mixin";
  
  /*INICIO CHEESE*/
  .container-titulo-seleccionada{
@@ -24,8 +25,7 @@
 
 
 .container-hamburguesas-seleccionadas{
-    display: flex;
-    justify-content: center;
+    @include flexing(flex,center);
     padding-bottom: $margen-entre-section;
 
     .container-card-seleccionada{
@@ -38,13 +38,11 @@
           }
       }
       .container-valor-cantidad{
-        display: flex;
-        justify-content: space-between;
+        @include flexing(flex,space-between);
         padding: 20px;
 
         .container-number{
-            display: flex;
-            justify-content: flex-end;
+          @include flexing(flex,flex-end);
             align-items: center;
             
             .input-number{

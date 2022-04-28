@@ -1,5 +1,6 @@
  @import "../base/variables";
  @import "../base/listas";
+ @import "../base/mixin";
  
  
  /*INICIO CONTACTO CSS*/
@@ -8,9 +9,8 @@
   /* Section primera*/
   
   .section-primera {
-    display: flex;
+    @include flexing(flex,center);
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-top: $margen-entre-section;
 
@@ -42,9 +42,8 @@
   .section-segunda {
     padding: 4em;
     background-color: rgb(233, 233, 233);
-    display: flex;
+    @include flexing(flex,center);
     align-items: center;
-    justify-content: center;
     flex-direction: column;
   }
   

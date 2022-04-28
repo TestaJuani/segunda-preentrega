@@ -1,6 +1,7 @@
 @import "../base/variables";
 @import "../base/mapas";
 @import "../base/extend";
+@import "../base/mixin";
 
 
 
@@ -21,7 +22,9 @@
     width: 20em;
 
     .card-body{
-
+        .titulo-card-menu{
+          font-size: 1.3rem;
+        }
         .agregar{
             padding: 2px;
             list-style: $iconos-ul;
@@ -37,8 +40,7 @@
 }
 .resumen-pedido{
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  @include flexing(flex,space-between);
   position: sticky;
   bottom: 0px;
   padding: 20px;
