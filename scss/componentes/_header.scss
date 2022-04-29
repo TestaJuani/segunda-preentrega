@@ -44,6 +44,12 @@ header {
                   }
                   .logo-nav-footer {
                     border-radius: 50%;
+                    @media screen and (max-width:468px) {
+                      width: 4em;
+                  }
+                  @media screen and (max-width:300px) {
+                      width: 3em;
+                  }
                 } 
             }
             @media screen and (max-width:648px){
@@ -51,12 +57,17 @@ header {
               flex-direction: column;
               padding: 20px;
             }
-
           }
           @media screen and (max-width:648px){
               height: 30em;
           }
+          @media screen and (max-width:500px){
+            height: 25em;
+        }    
       }
+      @media screen and (max-width:500px){
+        height: 25em;
+    }
     }
 
 
