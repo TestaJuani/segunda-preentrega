@@ -145,7 +145,7 @@ header nav ul li .logo-nav-footer {
 }
 @keyframes changeImg2 {
   0% {
-    background-image: url(../multimedia/imagenes/royale-inicio.jpeg);
+    background-image: url(../multimedia/imagenes/onion\ .png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -163,7 +163,7 @@ header nav ul li .logo-nav-footer {
     background-size: cover;
   }
   100% {
-    background-image: url(../multimedia/imagenes/onion\ .png);
+    background-image: url(../multimedia/imagenes/royale-inicio.jpeg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -255,6 +255,7 @@ header nav ul li .logo-nav-footer {
   width: 60%;
   text-align: center;
   font-size: 2rem;
+  font-family: "Neutra-Bold", sans-serif;
   font-weight: 800;
   opacity: 0.8;
   padding-bottom: 2em;
@@ -410,6 +411,33 @@ header nav ul li .logo-nav-footer {
 }
 
 /* INICIO CARRITO CSS */
+.container-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.container-titulo .titulos-secciones {
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+  opacity: 0.8;
+  padding-bottom: 2em;
+  border-bottom: 2px solid black;
+}
+@media screen and (max-width: 468px) {
+  .container-titulo .titulos-secciones {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container-titulo .titulos-secciones {
+    font-size: 15px;
+  }
+}
+
 /* SECTION */
 .container-hamburguesas-carrito {
   display: flex;
@@ -421,17 +449,91 @@ header nav ul li .logo-nav-footer {
   margin: 5px;
   width: 20em;
 }
-.container-hamburguesas-carrito .container-card-carrito .card-body .titulo-card-menu {
-  font-size: 1.3rem;
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito {
+  display: flex;
+  flex-direction: column;
 }
-.container-hamburguesas-carrito .container-card-carrito .card-body .agregar {
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .container-titulo-card-carrito {
+  padding: 6px;
+}
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .container-titulo-card-carrito .titulo-card-carrito {
+  font-size: 1rem;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .container-titulo-card-carrito .tipo-burger {
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
   padding: 2px;
+  border: 2px solid black;
+}
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px;
+}
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .agregar {
+  font-size: 0.8rem;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+}
+@media screen and (max-width: 300px) {
+  .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .agregar {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .lista-agregar {
+  padding: 0;
+  text-align: start;
   list-style: none;
 }
-.container-hamburguesas-carrito .container-card-carrito .card-body .quitar {
-  padding: 0;
+@media screen and (max-width: 300px) {
+  .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .lista-agregar {
+    text-align: center;
+  }
+}
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .quitar {
+  text-align: end;
+  font-size: 0.8rem;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+}
+@media screen and (max-width: 300px) {
+  .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .quitar {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .lista-quitar {
   text-align: end;
   list-style: none;
+}
+@media screen and (max-width: 300px) {
+  .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .lista-quitar {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .container-cantidad-precio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container-hamburguesas-carrito .container-card-carrito .container-boton-eliminar {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
 }
 
 .resumen-pedido {
