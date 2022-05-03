@@ -1,9 +1,7 @@
 @import "../base/variables";
-@import "../base/listas";
 @import "../base/mixin";
 
 
-/*INDEX.HTML*/
 
 
 .menu-galeria{
@@ -113,11 +111,9 @@
         
       }
       .titulos-index {
-        font-size: nth($size, 3);
-        font-family: $bg-fuente-titulos;
-        font-weight: $bg-negrita;
+        @include titulos-subtitulos(1.2rem,("Neutra-Bold", sans-serif),800); 
         @media screen and (max-width:468px) {
-          font-size: nth($size, 2);
+          font-size: 1rem;
         }
       }
       #parrafo-nosotros {
@@ -136,18 +132,15 @@
     align-items: center;
 
     .titulos-index {
-      font-size: nth($size, 3);
-        font-family: $bg-fuente-titulos;
-        font-weight: $bg-negrita;
+      @include titulos-subtitulos(1.2rem,("Neutra-Bold", sans-serif),800); 
         @media screen and (max-width:468px) {
-          font-size: nth($size, 2);
+          font-size: 1rem;
         }
         @media screen and (max-width:300px) {
-          font-size: nth($size, 1);
+          font-size: 1rem;
         }
 
       }
-
       .mapa {
         width: 80%;
         height: 20em;
@@ -156,7 +149,6 @@
   }
 
 
-  /* FIN INDEX.HTML*/
   
   
   

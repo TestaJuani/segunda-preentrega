@@ -1,12 +1,9 @@
  @import "../base/variables";
- @import "../base/listas";
  @import "../base/mixin";
  
  
- /*INICIO CONTACTO CSS*/
   
   
-  /* Section primera*/
   
   .section-primera {
     @include flexing(flex,center);
@@ -15,9 +12,7 @@
     padding-top: $margen-entre-section;
 
     .titulo-section-primera {
-        font-family: $bg-fuente-titulos;
-        font-weight: $bg-negrita;
-        font-size: nth($size, 3);
+      @include titulos-subtitulos(1.2rem,("Neutra-Bold", sans-serif),800); 
         margin-bottom: 10px;
         @media screen and (max-width:468px) {
           font-size: 15px;
@@ -52,7 +47,6 @@
     margin-bottom: $margen-entre-section;
   }
   
-  /*Section segunda*/
   
   .section-segunda {
     padding: 4em;
@@ -73,9 +67,7 @@
   .titulos-section-segunda {
     margin-bottom: 7px;
     margin-top: 10px;
-    font-family: $bg-fuente-titulos;
-    font-weight: 700;
-    font-size: nth($size, 1);
+    @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),700); 
     @media screen and (max-width:468px) {
       font-size: 12px;
   }
@@ -89,4 +81,3 @@
   
   
   
-  /*FIN CONTACTO CSS*/
