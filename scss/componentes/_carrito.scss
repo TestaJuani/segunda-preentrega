@@ -1,11 +1,9 @@
 @import "../base/variables";
-@import "../base/mapas";
 @import "../base/extend";
 @import "../base/mixin";
 
 
 
-/* INICIO CARRITO CSS */
   
 .container-titulo{
   @include flexing(flex,center);
@@ -15,9 +13,7 @@
   .titulos-secciones {
       width: 60%;
       text-align: center;
-      font-size: nth($size, 4);
-      font-family: $bg-fuente-titulos;
-      font-weight: $bg-negrita;
+      @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800); 
       opacity: 0.8;
       padding-bottom: 2em;
       border-bottom: 2px solid black;
@@ -32,11 +28,9 @@
     }
 }
   
-  /* SECTION */
   .container-hamburguesas-carrito{
-    display: map-get($secciones-tarjetas, bg-display);
-    flex-wrap: map-get($secciones-tarjetas, bg-wrap);
-    justify-content: map-get($secciones-tarjetas, bg-jc);
+    @include flexing(flex,center);  
+    flex-wrap:wrap;
     padding-bottom: $margen-entre-section;
 
 
@@ -51,16 +45,12 @@
       .container-titulo-card-carrito{
         padding: 6px;
         .titulo-card-carrito{
-          font-size: nth($size, 2);
-          font-family: $bg-fuente-titulos;
-          font-weight: $bg-negrita;
+          @include titulos-subtitulos(1rem,("Neutra-Bold", sans-serif),800); 
           text-align: center;
         }
         .tipo-burger{
           text-align: center;
-          font-size: nth($size, 1);
-          font-family: $bg-fuente-titulos;
-          font-weight: $bg-negrita;
+          @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),800); 
           padding: 2px;
           border: 2px solid black;  
         }
@@ -71,9 +61,7 @@
         justify-content: space-between;
         padding: 6px;
         .agregar{
-          font-size: nth($size, 1);
-          font-family: $bg-fuente-titulos;
-          font-weight: $bg-negrita;
+          @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),800); 
           @media screen and (max-width:300px) {
             text-align: center;
             text-decoration:underline;
@@ -89,9 +77,7 @@
         }
         .quitar{
           text-align: end;
-          font-size: nth($size, 1);
-          font-family: $bg-fuente-titulos;
-          font-weight: $bg-negrita;
+          @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),800); 
           @media screen and (max-width:300px) {
             text-align: center;
             text-decoration:underline;
@@ -143,5 +129,4 @@
     }
   }
 }  
-  /* FIN CARRITO CSS */
   

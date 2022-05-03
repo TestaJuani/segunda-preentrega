@@ -1,9 +1,7 @@
 @import "../base/variables";
-@import "../base/mapas";
+@import "../base/extend";
 @import "../base/mixin";
 
-
-/*MENU.HMTL*/
 
 
 .container-titulo{
@@ -14,9 +12,7 @@
     .titulos-secciones {
         width: 60%;
         text-align: center;
-        font-size: nth($size, 4);
-        font-family: $bg-fuente-titulos;
-        font-weight: $bg-negrita;
+        @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800);     
         opacity: 0.8;
         padding-bottom: 2em;
         border-bottom: 2px solid black;
@@ -34,9 +30,8 @@
 
 
 .container-hamburguesas-menu{
-    display: map-get($secciones-tarjetas, bg-display);
-    flex-wrap: map-get($secciones-tarjetas, bg-wrap);
-    justify-content: map-get($secciones-tarjetas, bg-jc);
+    @include flexing (flex,center);
+    flex-wrap: wrap;
     padding-bottom: $margen-entre-section;
 
     .container-card{
@@ -57,5 +52,3 @@
       }
 }
 
-
-/*FIN MENU HTML*/

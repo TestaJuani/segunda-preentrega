@@ -1,9 +1,8 @@
 @import "../base/variables";
-@import "../base/listas";
+@import "../base/mixin";
 
 
 
-/*FOOTER GENERAL*/
   
 #footer {
     height: 10em;
@@ -16,9 +15,7 @@
     nav{
         
         #lista-footer{
-            font-family: $bg-fuente-titulos;
-            font-weight: $bg-negrita;
-            font-size: nth($size, 1);
+            @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),800); 
             list-style: $iconos-ul;
             li{
                 i{
@@ -27,11 +24,11 @@
                     font-size: 1.8rem;
 
                     @media screen and (max-width:468px) {
-                        font-size: nth($size, 4);
+                        font-size: 2rem;
                     }
         
                     @media screen and (max-width:300px) {
-                        font-size: nth($size, 3);
+                        font-size: 1.2rem;
                     }
                     
                 }
@@ -52,9 +49,7 @@
         text-align: center;
         margin-left: 1em;
         .parrafos-footer {
-            font-family: $bg-fuente-titulos;
-            font-weight: 700;
-            font-size: nth($size, 1);
+            @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),700); 
             padding-top: 10px;
 
             @media screen and (max-width:468px) {
@@ -68,15 +63,15 @@
           
           .fa-solid,
          .fa-location-dot { 
-            font-size: nth($size, 3);
+            font-size: 1.2rem;
             margin-right: 2px;
 
             @media screen and (max-width:468px) {
-                font-size: nth($size, 2);
+                font-size: 1rem;
             }
 
             @media screen and (max-width:300px) {
-                font-size: nth($size, 1);
+                font-size: 0.8rem;
             }
         }
       }
@@ -87,4 +82,3 @@
   
   
   
-  /* FIN FOOTER*/

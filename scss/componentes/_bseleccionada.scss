@@ -1,9 +1,9 @@
- @import "../base/listas";
  @import "../base/variables";
  @import "../base/extend";
  @import "../base/mixin";
- 
- /*INICIO CHEESE*/
+
+
+
  .container-titulo-seleccionada{
     display: flex;
     align-items: center;
@@ -14,9 +14,7 @@
     .titulo-seleccionada{
         width: 100%;
         text-align: center;
-        font-family: $bg-fuente-titulos;
-        font-weight: $bg-negrita;
-        font-size: nth($size,4);
+        @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800); 
         opacity: 0.8;
         padding: 15px;
       }
@@ -54,7 +52,6 @@
 }
 
 
-  /* FIN CHEESE*/
 
 
 

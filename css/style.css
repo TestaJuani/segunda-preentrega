@@ -1,12 +1,5 @@
 /* ICONOS LISTA*/
-/* TITULOS SECCIONES*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
-/*HEADER */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 header {
   background-image: url(../multimedia/imagenes/banner.jpg);
   height: 30em;
@@ -29,8 +22,8 @@ header nav ul {
 }
 header nav ul li .links {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
+  font-family: "Neutra-Bold", sans-serif;
   font-weight: 1000;
   color: #fff;
   padding-bottom: 5px;
@@ -60,6 +53,11 @@ header nav ul li .logo-nav-footer {
     width: 3em;
   }
 }
+@media screen and (max-width: 820px) {
+  header nav ul {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 648px) {
   header nav ul {
     display: flex;
@@ -83,11 +81,8 @@ header nav ul li .logo-nav-footer {
   }
 }
 
-/*FIN HEADER*/
 /* ICONOS LISTA*/
-/* TITULOS SECCIONES*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
-/*INDEX.HTML*/
 .menu-galeria {
   display: flex;
   flex-direction: row;
@@ -231,7 +226,7 @@ header nav ul li .logo-nav-footer {
 }
 @media screen and (max-width: 300px) {
   .container-mapa .titulos-index {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 .container-mapa .mapa {
@@ -240,11 +235,14 @@ header nav ul li .logo-nav-footer {
   margin: 25px;
 }
 
-/* FIN INDEX.HTML*/
 /* ICONOS LISTA*/
-/* TITULOS SECCIONES*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
-/*MENU.HMTL*/
+.container-hamburguesas-seleccionadas .container-card-seleccionada, .container-hamburguesas-carrito .container-card-carrito, .container-hamburguesas-menu .container-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
 .container-titulo {
   display: flex;
   justify-content: center;
@@ -274,8 +272,8 @@ header nav ul li .logo-nav-footer {
 
 .container-hamburguesas-menu {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   padding-bottom: 5em;
 }
 .container-hamburguesas-menu .container-card {
@@ -290,12 +288,8 @@ header nav ul li .logo-nav-footer {
   font-size: 1.3rem;
 }
 
-/*FIN MENU HTML*/
 /* ICONOS LISTA*/
-/* TITULOS SECCIONES*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
-/*INICIO CONTACTO CSS*/
-/* Section primera*/
 .section-primera {
   display: flex;
   justify-content: center;
@@ -304,9 +298,9 @@ header nav ul li .logo-nav-footer {
   padding-top: 5em;
 }
 .section-primera .titulo-section-primera {
+  font-size: 1.2rem;
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 800;
-  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 468px) {
@@ -344,7 +338,6 @@ header nav ul li .logo-nav-footer {
   margin-bottom: 5em;
 }
 
-/*Section segunda*/
 .section-segunda {
   padding: 4em;
   background-color: rgb(233, 233, 233);
@@ -368,9 +361,9 @@ header nav ul li .logo-nav-footer {
 .titulos-section-segunda {
   margin-bottom: 7px;
   margin-top: 10px;
+  font-size: 0.8rem;
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
 }
 @media screen and (max-width: 468px) {
   .titulos-section-segunda {
@@ -383,34 +376,8 @@ header nav ul li .logo-nav-footer {
   }
 }
 
-/*FIN CONTACTO CSS*/
 /* ICONOS LISTA*/
-/* TITULOS SECCIONES*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
-/*INICIO GALERIA CSS*/
-.container-video {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 5em;
-}
-.container-video video {
-  height: 25em;
-  padding: 2px;
-}
-
-/*FIN GALERIA CSS*/
-/* ICONOS LISTA*/
-/* TITULOS SECCIONES*/
-/*MARGIN ENTRE ETIQUETAS SECTION*/
-.container-hamburguesas-seleccionadas .container-card-seleccionada, .container-hamburguesas-carrito .container-card-carrito, .container-hamburguesas-menu .container-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-/* INICIO CARRITO CSS */
 .container-titulo {
   display: flex;
   justify-content: center;
@@ -438,11 +405,57 @@ header nav ul li .logo-nav-footer {
   }
 }
 
-/* SECTION */
+.container-video {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5em;
+}
+.container-video video {
+  height: 25em;
+  padding: 2px;
+}
+
+/* ICONOS LISTA*/
+/*MARGIN ENTRE ETIQUETAS SECTION*/
+.container-hamburguesas-seleccionadas .container-card-seleccionada, .container-hamburguesas-carrito .container-card-carrito, .container-hamburguesas-menu .container-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.container-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.container-titulo .titulos-secciones {
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Neutra-Bold", sans-serif;
+  font-weight: 800;
+  opacity: 0.8;
+  padding-bottom: 2em;
+  border-bottom: 2px solid black;
+}
+@media screen and (max-width: 468px) {
+  .container-titulo .titulos-secciones {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container-titulo .titulos-secciones {
+    font-size: 15px;
+  }
+}
+
 .container-hamburguesas-carrito {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   padding-bottom: 5em;
 }
 .container-hamburguesas-carrito .container-card-carrito {
@@ -557,9 +570,7 @@ header nav ul li .logo-nav-footer {
   }
 }
 
-/* FIN CARRITO CSS */
 /* ICONOS LISTA*/
-/* TITULOS SECCIONES*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
 .container-hamburguesas-seleccionadas .container-card-seleccionada, .container-hamburguesas-menu .container-card, .container-hamburguesas-carrito .container-card-carrito {
   display: flex;
@@ -567,7 +578,6 @@ header nav ul li .logo-nav-footer {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-/*INICIO CHEESE*/
 .container-titulo-seleccionada {
   display: flex;
   align-items: center;
@@ -578,9 +588,9 @@ header nav ul li .logo-nav-footer {
 .container-titulo-seleccionada .titulo-seleccionada {
   width: 100%;
   text-align: center;
+  font-size: 2rem;
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 800;
-  font-size: 2rem;
   opacity: 0.8;
   padding: 15px;
 }
@@ -611,11 +621,8 @@ header nav ul li .logo-nav-footer {
   width: 15%;
 }
 
-/* FIN CHEESE*/
 /* ICONOS LISTA*/
-/* TITULOS SECCIONES*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
-/*FOOTER GENERAL*/
 #footer {
   height: 10em;
   display: grid;
@@ -626,9 +633,9 @@ header nav ul li .logo-nav-footer {
   color: #fff;
 }
 #footer nav #lista-footer {
+  font-size: 0.8rem;
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 800;
-  font-size: 0.8rem;
   list-style: none;
 }
 #footer nav #lista-footer li i {
@@ -664,9 +671,9 @@ header nav ul li .logo-nav-footer {
   margin-left: 1em;
 }
 #footer .container-parrafos-footer .parrafos-footer {
+  font-size: 0.8rem;
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
   padding-top: 10px;
 }
 @media screen and (max-width: 468px) {
@@ -696,7 +703,5 @@ header nav ul li .logo-nav-footer {
     font-size: 0.8rem;
   }
 }
-
-/* FIN FOOTER*/
 
 /*# sourceMappingURL=style.css.map */
