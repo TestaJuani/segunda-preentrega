@@ -17,6 +17,19 @@
         @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800); 
         opacity: 0.8;
         padding: 15px;
+        @media screen and (max-width:648px) {
+          font-size:25px;
+        }
+        @media screen and (max-width:468px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width:300px) {
+          font-size: 15px;          
+        }
+      }
+      .nombre-seleccionada{
+        @include titulos-subtitulos(1.2rem,(Geneva, Tahoma),700);
+        opacity: 0.7;
       }
       
 }
@@ -29,11 +42,17 @@
     .container-card-seleccionada{
       width: 25em;
       @extend %estructura-cards;
-
         .container-inputs{
             display: flex;
             flex-direction: column;
           }
+          
+      @media screen and (max-width:648px) {
+        width: 20em;
+      }
+      @media screen and (max-width:320px) {
+        width: 18em;
+      }
       }
       .container-valor-cantidad{
         @include flexing(flex,space-between);
