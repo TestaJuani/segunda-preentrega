@@ -10,7 +10,6 @@ header {
   background-position: 50% 50%;
   background-size: cover;
       nav {
-        color: white;
         padding: 20px;
         @include flexing(flex,center);
         
@@ -26,8 +25,7 @@ header {
                 color: #fff;
                 padding-bottom: 5px;
                 &:hover{
-                    border-bottom: 2px solid white;
-                    color: white;
+                    border-bottom: 2px solid white;                   
                 }
                 @media screen and (max-width:468px) {
                   font-size: 0.6rem;
