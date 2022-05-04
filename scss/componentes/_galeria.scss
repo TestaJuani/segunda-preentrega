@@ -1,6 +1,7 @@
 @import "../base/variables";
 @import "../base/mixin";
 
+
 .container-titulo{
     @include flexing(flex,center);
     margin-top: $margen-entre-section;
@@ -24,6 +25,10 @@
       }
 }
 
+
+
+
+  
 
 .container-video{
     @include flexing(flex,center);
