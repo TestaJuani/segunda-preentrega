@@ -27,6 +27,11 @@ header {
                 &:hover{
                     border-bottom: 2px solid white;                   
                 }
+                @media screen and (max-width:648px){
+                  background-color: rgba(255, 255, 255, 0.41);
+                  padding: 4px;
+                  border-radius: 2px;
+                }
                 @media screen and (max-width:468px) {
                   font-size: 0.6rem;
               }

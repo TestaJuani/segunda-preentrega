@@ -34,6 +34,13 @@ header nav ul li .links {
 header nav ul li .links:hover {
   border-bottom: 2px solid white;
 }
+@media screen and (max-width: 648px) {
+  header nav ul li .links {
+    background-color: rgba(255, 255, 255, 0.41);
+    padding: 4px;
+    border-radius: 2px;
+  }
+}
 @media screen and (max-width: 468px) {
   header nav ul li .links {
     font-size: 0.6rem;
