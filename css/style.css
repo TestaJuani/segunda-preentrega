@@ -1,5 +1,9 @@
 /* ICONOS LISTA*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
+
+.disclaimer{
+  display: none;
+}
 header {
   background-image: url(../multimedia/imagenes/banner.jpg);
   height: 30em;
