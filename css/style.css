@@ -204,6 +204,11 @@ header nav ul li .logo-nav-footer {
   width: 50%;
   margin-top: 20px;
 }
+@media screen and (max-width: 500px) {
+  #nosotros #parrafo-nosotros {
+    width: 80%;
+  }
+}
 
 .container-mapa {
   margin-top: 5em;
