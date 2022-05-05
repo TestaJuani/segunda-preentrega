@@ -28,11 +28,22 @@ header nav ul li .links {
   font-size: 0.8rem;
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 1000;
-  color: #fff;
+  color: white;
   padding-bottom: 5px;
 }
 header nav ul li .links:hover {
   border-bottom: 2px solid white;
+}
+@media screen and (max-width: 648px) {
+  header nav ul li .links {
+    background-color: rgba(255, 255, 255, 0.41);
+    padding: 4px;
+    border-radius: 2px;
+    color: black;
+  }
+  header nav ul li .links:hover {
+    border-bottom: none;
+  }
 }
 @media screen and (max-width: 468px) {
   header nav ul li .links {

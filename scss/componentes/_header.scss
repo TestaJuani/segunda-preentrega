@@ -22,10 +22,19 @@ header {
               .links{
                 text-decoration: none;
                 @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),1000); 
-                color: #fff;
+                color: white;
                 padding-bottom: 5px;
                 &:hover{
                     border-bottom: 2px solid white;                   
+                }
+                @media screen and (max-width:648px){
+                  background-color: rgba(255, 255, 255, 0.41);
+                  padding: 4px;
+                  border-radius: 2px;
+                  color: black;
+                  &:hover{
+                    border-bottom:none;                   
+                }
                 }
                 @media screen and (max-width:468px) {
                   font-size: 0.6rem;
