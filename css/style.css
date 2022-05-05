@@ -1,9 +1,5 @@
 /* ICONOS LISTA*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
-
-.disclaimer{
-  display: none;
-}
 header {
   background-image: url(../multimedia/imagenes/banner.jpg);
   height: 30em;
@@ -617,6 +613,21 @@ header nav ul li .logo-nav-footer {
   font-weight: 700;
   opacity: 0.7;
 }
+@media screen and (max-width: 648px) {
+  .container-titulo-seleccionada .nombre-seleccionada {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .container-titulo-seleccionada .nombre-seleccionada {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container-titulo-seleccionada .nombre-seleccionada {
+    font-size: 10px;
+  }
+}
 
 .container-hamburguesas-seleccionadas {
   display: flex;
@@ -637,7 +648,7 @@ header nav ul li .logo-nav-footer {
 }
 @media screen and (max-width: 320px) {
   .container-hamburguesas-seleccionadas .container-card-seleccionada {
-    width: 18em;
+    width: 15em;
   }
 }
 .container-hamburguesas-seleccionadas .container-valor-cantidad {
