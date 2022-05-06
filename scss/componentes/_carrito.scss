@@ -17,7 +17,6 @@
       opacity: 0.8;
       padding-bottom: 2em;
       border-bottom: 2px solid black;
-      
       @media screen and (max-width:468px) {
           font-size: 20px;
       }
@@ -47,6 +46,13 @@
         .titulo-card-carrito{
           @include titulos-subtitulos(1rem,("Neutra-Bold", sans-serif),800); 
           text-align: center;
+          @media screen and (max-width:468px) {
+            font-size: 18px;
+        }
+        @media screen and (max-width:300px) {
+            font-size: 12px;
+            
+        }
         }
         .tipo-burger{
           text-align: center;
@@ -109,16 +115,69 @@
     }
   }
 }
+
+
+.container-formulario{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom:$margen-entre-section;
+  .container-titulo-formulario{
+    margin-bottom:$margen-entre-section;
+    width: 60%;
+    text-align: center;
+    .titulo-formulario{
+      @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800); 
+      opacity: 0.8;
+      padding-bottom: 2em;
+      border-bottom: 2px solid black;
+      @media screen and (max-width:468px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width:300px) {
+        font-size: 15px;
+        
+    }
+    }
+  }
+  .formulario{
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 30em;
+    padding: 40px;
+    .container-label-input{
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      label{
+        margin-bottom: 10px;
+        @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),800); 
+      }
+      p{
+        @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),800); 
+      }
+    }  
+    @media screen and (max-width:648px) {
+      width: 20em;
+    }  
+    @media screen and (max-width:320px) {
+      width: 15em;
+    }  
+  }
+  }
+
 .resumen-pedido{
-  width: 100%;
   @include flexing(flex,space-between);
   position: sticky;
   bottom: 0px;
-  padding: 20px;
+  padding: 15px;
   background-color: rgba(0, 0, 0, 0.904);
   color: #fff;
 
   .valortotal{
+    @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),700); 
     @media screen and(max-width:468px) {
       font-size: 12px;
       

@@ -163,12 +163,47 @@
 
     <!-- Fin resumen hamburguesas para pedir -->
 
+    <!-- Formulario para enviar pedido -->
 
-
+    <section class="container-formulario" id="formulario-fc">
+        <div class="container-titulo-formulario">
+            <h4 class="titulo-formulario">FINALIZAR COMPRA</h4>
+        </div>
+        <form class="formulario">
+            <div class="container-label-input">
+                <label for="name">Nombre del pedido</label>
+                <input type="text" id="name" name="nombre" required>
+            </div>
+            <div class="container-label-input">
+                <label for="Aclaraciones">Aclaraciones</label>
+                <input type="text" id="Aclaraciones" name="aclaraciones">
+            </div>
+            <div class="container-label-input">
+                <label>Como obtener tu pedido</label>
+                <label for="envio"><input type="radio" id="envio" name="enviar-retirar" class="m-1">Lo enviamos</label>
+                <label for="retiro"><input type="radio" id="retiro" name="enviar-retirar" class="m-1">Retiro por el local</label>
+            </div>
+            <div class="container-label-input">
+                <label>Metodo de pago</label>
+                <label for="efectivo"><input type="radio" id="efectivo" name="pago" class="m-1">Efectivo</label>
+                <label for="mp"><input type="radio" id="mp" name="pago" class="m-1">Mercado pago</label>
+            </div>
+            <div class="container-label-input">
+                <p> VALOR TOTAL $1000 </p>    
+            </div>
+            <div class="container-label-input m-0">
+                <button class="btn btn-outline-success valortotal text-center">Enviar pedido por whatsapp</button>
+            </div>
+            </form>
+    </section>
+    <!-- Fin de formulario para enviar pedido -->
+        
+        
+        
     <!-- Barra fixed para finalizar compra-->
     <section class="resumen-pedido">
         <p class="valortotal">VALOR TOTAL $</p>
-        <button type="button" class="btn btn-outline-success valortotal">FINALIZAR COMPRA</button>
+        <a href="#formulario-fc" class="btn btn-outline-success valortotal">FINALIZAR COMPRA</a>
     </section>
 
     <!-- Fin barra fixed para finalizar compra-->
