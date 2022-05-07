@@ -665,38 +665,6 @@ header nav ul li .logo-nav-footer {
   background-color: rgba(0, 0, 0, 0.904);
   color: #fff;
 }
-.resumen-pedido .container-lista-resumen {
-  display: flex;
-  flex-direction: row;
-}
-.resumen-pedido .container-lista-resumen .valortotal {
-  font-size: 0.8rem;
-  font-family: "Neutra-Bold", sans-serif;
-  font-weight: 700;
-}
-@media screen and (max-width: 468px) {
-  .resumen-pedido .container-lista-resumen .valortotal {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .resumen-pedido .container-lista-resumen .valortotal {
-    font-size: 10px;
-  }
-}
-.resumen-pedido .container-lista-resumen .lista-resumen {
-  font-size: 0.8rem;
-  font-family: "Neutra-Bold", sans-serif;
-  font-weight: 700;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.resumen-pedido .container-lista-resumen .lista-resumen li {
-  margin-left: 1em;
-}
 .resumen-pedido .valortotal {
   font-size: 0.8rem;
   font-family: "Neutra-Bold", sans-serif;
