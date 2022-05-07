@@ -282,7 +282,7 @@ header nav ul li .logo-nav-footer {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .container-titulo .titulos-secciones {
     font-size: 15px;
   }
@@ -417,7 +417,7 @@ header nav ul li .logo-nav-footer {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .container-titulo .titulos-secciones {
     font-size: 15px;
   }
@@ -464,7 +464,7 @@ header nav ul li .logo-nav-footer {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .container-titulo .titulos-secciones {
     font-size: 15px;
   }
@@ -475,6 +475,7 @@ header nav ul li .logo-nav-footer {
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 5em;
+  margin: 50px;
 }
 .container-hamburguesas-carrito .container-card-carrito {
   margin: 5px;
@@ -493,14 +494,9 @@ header nav ul li .logo-nav-footer {
   font-weight: 800;
   text-align: center;
 }
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 320px) {
   .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .container-titulo-card-carrito .titulo-card-carrito {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 300px) {
-  .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .container-titulo-card-carrito .titulo-card-carrito {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .container-titulo-card-carrito .tipo-burger {
@@ -510,6 +506,11 @@ header nav ul li .logo-nav-footer {
   font-weight: 800;
   padding: 2px;
   border: 2px solid black;
+}
+@media screen and (max-width: 320px) {
+  .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .container-titulo-card-carrito .tipo-burger {
+    font-size: 12px;
+  }
 }
 .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar {
   display: flex;
@@ -522,8 +523,9 @@ header nav ul li .logo-nav-footer {
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 800;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .agregar {
+    font-size: 12px;
     text-align: center;
     text-decoration: underline;
   }
@@ -533,8 +535,14 @@ header nav ul li .logo-nav-footer {
   text-align: start;
   list-style: none;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 468px) {
   .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .lista-agregar {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .lista-agregar {
+    font-size: 11px;
     text-align: center;
   }
 }
@@ -544,8 +552,9 @@ header nav ul li .logo-nav-footer {
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 800;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .quitar {
+    font-size: 12px;
     text-align: center;
     text-decoration: underline;
   }
@@ -554,13 +563,19 @@ header nav ul li .logo-nav-footer {
   text-align: end;
   list-style: none;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 468px) {
   .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .lista-quitar {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar .lista-quitar {
+    font-size: 11px;
     text-align: center;
     padding: 0;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .container-hamburguesas-carrito .container-card-carrito .container-cuerpo-card-carrito .agregar-quitar {
     display: flex;
     flex-direction: column;
@@ -601,7 +616,7 @@ header nav ul li .logo-nav-footer {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .container-formulario .container-titulo-formulario .titulo-formulario {
     font-size: 15px;
   }
@@ -663,6 +678,12 @@ header nav ul li .logo-nav-footer {
 @media screen and (max-width: 320px) {
   .resumen-pedido .valortotal {
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .resumen-pedido {
+    display: flex;
+    flex-direction: column;
   }
 }
 
