@@ -12,8 +12,6 @@
     justify-items: center;
     background-color: rgba(0, 0, 0, 0.904);
     color: #fff;
-    nav{
-        
         #lista-footer{
             @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),800); 
             list-style: $iconos-ul;
@@ -34,7 +32,6 @@
                 }
             }
         }
-    }
     .logo-nav-footer{
         border-radius: 50%;
 

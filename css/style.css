@@ -655,6 +655,11 @@ header nav ul li .logo-nav-footer {
     width: 15em;
   }
 }
+@media screen and (max-width: 250px) {
+  .container-formulario .formulario {
+    width: 12em;
+  }
+}
 
 .resumen-pedido {
   display: flex;
@@ -814,24 +819,24 @@ header nav ul li .logo-nav-footer {
   background-color: rgba(0, 0, 0, 0.904);
   color: #fff;
 }
-#footer nav #lista-footer {
+#footer #lista-footer {
   font-size: 0.8rem;
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 800;
   list-style: none;
 }
-#footer nav #lista-footer li i {
+#footer #lista-footer li i {
   margin-top: 10px;
   color: #fff;
   font-size: 1.8rem;
 }
 @media screen and (max-width: 468px) {
-  #footer nav #lista-footer li i {
+  #footer #lista-footer li i {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 300px) {
-  #footer nav #lista-footer li i {
+  #footer #lista-footer li i {
     font-size: 1.2rem;
   }
 }
