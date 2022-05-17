@@ -817,7 +817,6 @@ header nav ul li .logo-nav-footer {
   align-items: center;
   justify-items: center;
   background-color: rgba(0, 0, 0, 0.904);
-  color: #fff;
 }
 #footer #lista-footer {
   font-size: 0.8rem;
@@ -832,12 +831,12 @@ header nav ul li .logo-nav-footer {
 }
 @media screen and (max-width: 468px) {
   #footer #lista-footer li i {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 300px) {
   #footer #lista-footer li i {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 #footer .logo-nav-footer {
@@ -845,12 +844,12 @@ header nav ul li .logo-nav-footer {
 }
 @media screen and (max-width: 468px) {
   #footer .logo-nav-footer {
-    width: 4em;
+    width: 3em;
   }
 }
 @media screen and (max-width: 300px) {
   #footer .logo-nav-footer {
-    width: 3em;
+    width: 2em;
   }
 }
 #footer .container-parrafos-footer {
@@ -858,19 +857,19 @@ header nav ul li .logo-nav-footer {
   margin-left: 1em;
 }
 #footer .container-parrafos-footer .parrafos-footer {
+  color: #fff;
   font-size: 0.8rem;
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 700;
-  padding-top: 10px;
 }
 @media screen and (max-width: 468px) {
   #footer .container-parrafos-footer .parrafos-footer {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 300px) {
   #footer .container-parrafos-footer .parrafos-footer {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
   }
 }
 #footer .container-parrafos-footer .fa-solid,
@@ -881,13 +880,13 @@ header nav ul li .logo-nav-footer {
 @media screen and (max-width: 468px) {
   #footer .container-parrafos-footer .fa-solid,
 #footer .container-parrafos-footer .fa-location-dot {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 300px) {
   #footer .container-parrafos-footer .fa-solid,
 #footer .container-parrafos-footer .fa-location-dot {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 
