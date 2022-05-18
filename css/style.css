@@ -331,26 +331,23 @@ header nav ul li .logo-nav-footer {
     font-size: 12px;
   }
 }
-
-.parrafos {
+.section-primera .parrafos {
   font-family: "Times New Roman", Times, serif;
 }
 @media screen and (max-width: 468px) {
-  .parrafos {
+  .section-primera .parrafos {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 300px) {
-  .parrafos {
+  .section-primera .parrafos {
     font-size: 8px;
   }
 }
-
-#direccion {
+.section-primera #direccion {
   margin-bottom: 20px;
 }
-
-.mapa {
+.section-primera .mapa {
   width: 80%;
   height: 20em;
   margin-bottom: 5em;
@@ -364,19 +361,7 @@ header nav ul li .logo-nav-footer {
   align-items: center;
   flex-direction: column;
 }
-
-@media screen and (max-width: 468px) {
-  #titulo-largo {
-    font-size: 10px;
-  }
-}
-@media screen and (max-width: 320px) {
-  #titulo-largo {
-    font-size: 7px;
-  }
-}
-
-.titulos-section-segunda {
+.section-segunda .titulos-section-segunda {
   margin-bottom: 7px;
   margin-top: 10px;
   font-size: 0.8rem;
@@ -384,13 +369,36 @@ header nav ul li .logo-nav-footer {
   font-weight: 700;
 }
 @media screen and (max-width: 468px) {
-  .titulos-section-segunda {
+  .section-segunda .titulos-section-segunda {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 300px) {
-  .titulos-section-segunda {
+  .section-segunda .titulos-section-segunda {
     font-size: 10px;
+  }
+}
+.section-segunda .parrafos {
+  font-family: "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 468px) {
+  .section-segunda .parrafos {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .section-segunda .parrafos {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .section-segunda #titulo-largo {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section-segunda #titulo-largo {
+    font-size: 7px;
   }
 }
 
