@@ -11,10 +11,12 @@
     align-items: center;
     justify-items: center;
     background-color: rgba(0, 0, 0, 0.904);
+    nav {
         #lista-footer{
             @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),800); 
             list-style: $iconos-ul;
             li{
+                a{
                 i{
                     margin-top: 10px;
                     color: #fff;
@@ -30,7 +32,9 @@
                     
                 }
             }
+            }
         }
+    }
     .logo-nav-footer{
         border-radius: 50%;
 

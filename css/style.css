@@ -826,24 +826,24 @@ header nav ul li .logo-nav-footer {
   justify-items: center;
   background-color: rgba(0, 0, 0, 0.904);
 }
-#footer #lista-footer {
+#footer nav #lista-footer {
   font-size: 0.8rem;
   font-family: "Neutra-Bold", sans-serif;
   font-weight: 800;
   list-style: none;
 }
-#footer #lista-footer li i {
+#footer nav #lista-footer li a i {
   margin-top: 10px;
   color: #fff;
   font-size: 1.8rem;
 }
 @media screen and (max-width: 468px) {
-  #footer #lista-footer li i {
+  #footer nav #lista-footer li a i {
     font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 300px) {
-  #footer #lista-footer li i {
+  #footer nav #lista-footer li a i {
     font-size: 1rem;
   }
 }
