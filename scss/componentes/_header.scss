@@ -21,7 +21,7 @@ header {
           li{
               .links{
                 text-decoration: none;
-                @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),1000); 
+                @include titulos-subtitulos(0.8rem,("Neutra-Bold", sans-serif),900); 
                 color: white;
                 padding-bottom: 5px;
                 &:hover{
