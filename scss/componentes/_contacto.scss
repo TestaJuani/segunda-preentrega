@@ -9,7 +9,7 @@
     @include flexing(flex,center);
     flex-direction: column;
     align-items: center;
-    padding-top: $margen-entre-section;
+    margin-top: $margen-entre-section;
 
     .titulo-section-primera {
       @include titulos-subtitulos(1.2rem,("Neutra-Bold", sans-serif),800); 

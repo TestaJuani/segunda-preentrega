@@ -309,7 +309,7 @@ header nav ul li .logo-nav-footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: 5em;
+  margin-top: 5em;
 }
 .section-primera .titulo-section-primera {
   font-size: 1.2rem;
@@ -478,8 +478,7 @@ header nav ul li .logo-nav-footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 5em;
-  margin: 50px;
+  margin-bottom: 5em;
 }
 .container-hamburguesas-carrito .container-card-carrito {
   margin: 5px;
@@ -760,7 +759,7 @@ header nav ul li .logo-nav-footer {
 .container-hamburguesas-seleccionadas {
   display: flex;
   justify-content: center;
-  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 .container-hamburguesas-seleccionadas .container-card-seleccionada {
   width: 25em;

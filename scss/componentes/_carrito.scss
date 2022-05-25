@@ -29,8 +29,7 @@
   .container-hamburguesas-carrito{
     @include flexing(flex,center);  
     flex-wrap:wrap;
-    padding-bottom: $margen-entre-section;
-    margin: 50px;
+    margin-bottom: $margen-entre-section;
   .container-card-carrito{
     @extend %estructura-cards;
     margin: 5px;   

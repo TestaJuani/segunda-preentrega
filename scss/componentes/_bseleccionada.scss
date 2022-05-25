@@ -46,7 +46,7 @@
 
 .container-hamburguesas-seleccionadas{
     @include flexing(flex,center);
-    padding-bottom: 2em;
+    margin-bottom: 2em;
     .container-card-seleccionada{
       width: 25em;
       @extend %estructura-cards;
