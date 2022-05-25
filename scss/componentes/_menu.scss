@@ -32,7 +32,7 @@
 .container-hamburguesas-menu{
     @include flexing (flex,center);
     flex-wrap: wrap;
-    padding-bottom: $margen-entre-section;
+    margin-bottom: $margen-entre-section;
 
     .container-card{
         @extend %estructura-cards;

@@ -288,7 +288,7 @@ header nav ul li .logo-nav-footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 5em;
+  margin-bottom: 5em;
 }
 .container-hamburguesas-menu .container-card {
   margin: 5px;
