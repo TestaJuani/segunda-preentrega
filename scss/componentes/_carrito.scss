@@ -5,11 +5,11 @@
 
 
   
-.container-titulo{
+.container-titulo-carrito{
   @include flexing(flex,center);
   margin-top: $margen-entre-section;
   margin-bottom:$margen-entre-section;
-  .titulos-secciones {
+  .titulos-secciones-carrito{
       width: 60%;
       text-align: center;
       @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800); 

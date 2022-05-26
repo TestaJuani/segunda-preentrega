@@ -257,13 +257,13 @@ header nav ul li .logo-nav-footer {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.container-titulo {
+.container-titulo-menu {
   display: flex;
   justify-content: center;
   margin-top: 5em;
   margin-bottom: 5em;
 }
-.container-titulo .titulos-secciones {
+.container-titulo-menu .titulos-secciones-menu {
   width: 60%;
   text-align: center;
   font-size: 2rem;
@@ -274,12 +274,12 @@ header nav ul li .logo-nav-footer {
   border-bottom: 2px solid black;
 }
 @media screen and (max-width: 468px) {
-  .container-titulo .titulos-secciones {
+  .container-titulo-menu .titulos-secciones-menu {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 320px) {
-  .container-titulo .titulos-secciones {
+  .container-titulo-menu .titulos-secciones-menu {
     font-size: 15px;
   }
 }
@@ -400,13 +400,13 @@ header nav ul li .logo-nav-footer {
 
 /* ICONOS LISTA*/
 /*MARGIN ENTRE ETIQUETAS SECTION*/
-.container-titulo {
+.container-titulo-galeria {
   display: flex;
   justify-content: center;
   margin-top: 5em;
   margin-bottom: 5em;
 }
-.container-titulo .titulos-secciones {
+.container-titulo-galeria .titulos-secciones-galeria {
   width: 60%;
   text-align: center;
   font-size: 2rem;
@@ -417,12 +417,12 @@ header nav ul li .logo-nav-footer {
   border-bottom: 2px solid black;
 }
 @media screen and (max-width: 468px) {
-  .container-titulo .titulos-secciones {
+  .container-titulo-galeria .titulos-secciones-galeria {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 320px) {
-  .container-titulo .titulos-secciones {
+  .container-titulo-galeria .titulos-secciones-galeria {
     font-size: 15px;
   }
 }
@@ -447,13 +447,13 @@ header nav ul li .logo-nav-footer {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.container-titulo {
+.container-titulo-carrito {
   display: flex;
   justify-content: center;
   margin-top: 5em;
   margin-bottom: 5em;
 }
-.container-titulo .titulos-secciones {
+.container-titulo-carrito .titulos-secciones-carrito {
   width: 60%;
   text-align: center;
   font-size: 2rem;
@@ -464,12 +464,12 @@ header nav ul li .logo-nav-footer {
   border-bottom: 2px solid black;
 }
 @media screen and (max-width: 468px) {
-  .container-titulo .titulos-secciones {
+  .container-titulo-carrito .titulos-secciones-carrito {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 320px) {
-  .container-titulo .titulos-secciones {
+  .container-titulo-carrito .titulos-secciones-carrito {
     font-size: 15px;
   }
 }

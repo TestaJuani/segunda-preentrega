@@ -4,12 +4,12 @@
 
 
 
-.container-titulo{
+.container-titulo-menu{
     @include flexing(flex,center);
     margin-top: $margen-entre-section;
     margin-bottom:$margen-entre-section;
 
-    .titulos-secciones {
+    .titulos-secciones-menu{
         width: 60%;
         text-align: center;
         @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800);     
