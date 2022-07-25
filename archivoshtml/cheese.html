@@ -71,69 +71,54 @@
   <!-- Titulo de la seccion -->
     <section class="container-titulo-seleccionada">
       <h2 class="titulo-seleccionada">HAMBURGUESA SELECCIONADA</h2>
-      <h3 class="nombre-seleccionada">CHEESEBURGER</h3>
     </section>
    <!-- Fin titulo de la seccion --> 
 
 
    <!-- Tarjeta de hamburguesa -->
     <section class="container-hamburguesas-seleccionadas">
-      <div class="container-card-seleccionada" >
-        <img src="../multimedia/imagenes/cheese.png" class="card-img-top " alt="cheeseburger">
-        <div class="card-body">
-          <h4 class="card-title text-center">CHEESEBURGER</h4>
-          <p class="card-text border-bottom pb-3"> Medallon de carne de 120grs, cheddar y salsa thousand island. Incluye papas.</p>
-          <div class="container-inputs">
-            <select class="form-select mt-3 mb-3" aria-label="Default select example">
-              <option selected>Cantida de medallones</option>
-              <option value="simple">Simple</option>
-              <option value="doble">Doble</option>
-              <option value="triple">Triple</option>
-            </select>
-              <div class="form-check ">
-                <input class="form-check-input" type="checkbox" value="" id="salsa">
-                <label class="form-check-label" for="salsa">
-                  Sin salsa
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="cheddar" >
-                <label class="form-check-label" for="cheddar">
-                  Extra cheddar
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="pepinos" >
-                <label class="form-check-label" for="pepinos">
-                  Con pepinos
-                </label>
-              </div>
-          </div>
-          <div class="mt-3">
-            <div class="container-valor-cantidad">
-              <p> valor $888</p>
-              <div class="container-number">
-                <label class="p-2" for="contador">
-                  Cantidad
-                </label>
-                <input type="number" class="input-number text-center" id="contador" name="cantidad">
-              </div>
+      <div class="container-card-seleccionada">
+        <div class="header-card">
+          <div class="container-enlaces-rapidos">
+            <h4 class="card-title">CHEESEBURGER</h4>
+            <div>
+              <a href="menu.html" class="volver">VOLVER</a>
+              <a href="carrito.html" class="carrito">CARRITO</a>
             </div>
-            <button type="button" class="btn btn-outline-success w-100">Enviar al carrito</button>
           </div>
         </div>
+        <form class="container-inputs" id="formulario">
+          <select class="form-select mt-3 mb-3" aria-label="Default select example" id="selection">
+            <option value="Simple">Simple</option>
+            <option value="Doble">Doble</option>
+            <option value="Triple">Triple</option>
+          </select>
+            <div class="form-check ">
+              <input class="form-check-input" type="checkbox" value="Sin salsa" id="salsa">
+              <label class="form-check-label" for="salsa">
+                Sin salsa
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Extra cheddar" id="cheddar" >
+              <label class="form-check-label" for="cheddar">
+                Extra cheddar
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Con pepinos" id="pepinos" >
+              <label class="form-check-label" for="pepinos">
+                Con pepinos
+              </label>
+            </div>
+            <div class="mt-3">      
+              <p id="precio"> Valor $690</p>
+              <input type="submit" value="Enviar al carrito" class="btn btn-outline-success w-100">
+            </div>
+        </form>
       </div>
     </section>
     <!--Fin tarjeta de hamburguesa -->
-
-    <!-- Enlaces rapidos-->
-    <section class="container-enlaces-rapidos">
-        <a href="menu.html" class="btn btn-outline-dark botones-menu-carrito">VOLVER AL MENU</a>
-        <a href="carrito.html" class="btn btn-outline-dark botones-menu-carrito">IR AL CARRITO</a>
-    </section>
-    <!-- Fin enlaces rapidos-->
-
-    
 
        <!-- PIE DE PAGINA -->
     <footer id="footer">
