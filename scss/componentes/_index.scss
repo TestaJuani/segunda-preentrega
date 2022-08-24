@@ -2,6 +2,40 @@
 @import "../base/mixin";
 
 
+.container-logo-titulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  display: none;
+  .container-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .logo-header{
+      width: 7rem;
+    }
+  }
+  .titulo{
+    width: 90%;
+    text-align: center;
+    margin-top: 1em;
+    @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.273);
+    padding-bottom: 1.5em;
+    @media screen and (max-width:468px) {
+      font-size: 1.8rem;
+    }
+    @media screen and (max-width:300px) {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width:648px) {
+    display: flex;
+  }
+}
+
+
 
 
 .menu-galeria{
@@ -110,39 +144,6 @@
       display: flex;
       flex-direction: column;
     }   
-}
-
-#nosotros {
-    margin-top: $margen-entre-section;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.8;
-
-    #logo-nosotros {
-        border-radius: 50%;
-      }
-
-      #titulo-nosotros {
-        margin-top: 15px;
-        
-      }
-      .titulos-index {
-        @include titulos-subtitulos(1.2rem,("Neutra-Bold", sans-serif),800); 
-        @media screen and (max-width:468px) {
-          font-size: 1rem;
-        }
-      }
-      #parrafo-nosotros {
-        display: flex;
-        text-align: center;
-        width: 50%;
-        margin-top: 20px;
-        @media screen and (max-width:500px){
-          width: 80%;
-        }
-      }
-
 }
 
 .container-mapa {

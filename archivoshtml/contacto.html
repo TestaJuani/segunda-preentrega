@@ -31,42 +31,45 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header-1">
-      <nav>
-          <ul>            
-              <li>
-                  <a href="../index.html" class="links">INICIO</a>
-              </li>
-              <li>
-                  <a href="menu.html" class="links">MENU</a> 
-              </li>
-              <li>
-                  <a href="contacto.html" class="links">CONTACTO</a>
-              </li>
-              <li>
-                  <a href="../index.html">
-                      <img src="../multimedia/imagenes/LogoB.png" alt="Logo bagas burger" class="logo-nav-footer">
-                  </a>
-              </li>
-              <li>
-                  <a href="../index.html#nosotros" class="links">NOSOTROS</a>
-              </li>
-              <li>
-                  <a href="galeria.html" class="links">GALERIA</a>
-              </li>
-              <li>
-                <a href="carrito.html" class="btn position-relative">
-                  <i class="fa-solid fa-cart-shopping" ></i>
-                  <span class="m-2 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    +1
-                  </span>
-                </a>
-              </li>
-          </ul>
-      </nav>
-  </header>
-  <!-- Fin header -->
+        <!-- Header -->
+        <header class="header-1">
+            <div class="contenedor-logo">
+                <a href="index.html">
+                  <img src="../multimedia/imagenes/LogoB.png" alt="Logo bagas burger" class="logo-nav-footer">
+              </a>
+              </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html" class="links">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="./menu.html" class="links">MENU</a> 
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="links">CONTACTO</a>
+                    </li>
+                    <li>
+                        <a href="./galeria.html" class="links">GALERIA</a>
+                    </li>
+                    <li>
+                      <a href="./carrito.html" class="btn position-relative">
+                        <i class="fa-solid fa-cart-shopping" ></i>
+                        <span class="m-2 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cantidad-carrito">
+                        </span>
+                      </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Fin header -->
+
+  <section class="container-logo-titulo">
+    <div class="container-logo">
+        <img src="../multimedia/imagenes/LogoB.png" alt="Logo bagas burger" class="logo-header">
+    </div>
+    <h1 class="titulo">BAGAS BURGER</h1>
+</section>
 
   <!-- Mapa -->
         <section class="section-primera">
@@ -84,6 +87,48 @@
             <p class="parrafos">instagram.com/bagas_burger/</p>
         </section>
 <!-- Fin contacto-->
+
+ <!-- Header -->
+ <header class="header-2">
+    <nav>
+        <ul>
+            <li class="contenedor-logo">
+                <a href="../index.html" class="links">
+                    <i class="fa-solid fa-house"></i>
+                    <span>INICIO</span>
+                </a>
+            </li>
+            <li class="contenedor-logo" >
+                <a href="./menu.html" class="links">
+                    <i class="fa-solid fa-burger"></i>
+                    <span>MENU</span>
+                </a>
+            </li>
+            <li class="contenedor-logo" id="ubicacion-navbar">
+                <a href="contacto.html" class="links">
+                    <i class="fa-solid fa-location-dot" id="contacto"></i>
+                    <span> CONTACTO</span>
+                </a>
+            </li>                  
+            <li class="contenedor-logo">
+                <a href="./galeria.html" class="links">
+                    <i class="fa-solid fa-images" id="galeria"></i>
+                    <span>GALERIA</span>
+                </a>
+            </li>
+            <li class="contenedor-logo" >
+                <a href="./carrito.html" class="links">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="position-absolute translate-middle badge rounded-pill bg-danger" id="cantidad-carrito">     
+                        1
+                    </span>
+                    <span>CARRITO</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- Fin header-->
 
 <!-- PIE DE PAGINA -->
 <footer id="footer">
