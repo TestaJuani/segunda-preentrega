@@ -3,12 +3,12 @@
 @import "../base/mixin";
 
 
-.container-titulo-menu{
+.container-titulo-seleccionada{
   @include flexing(flex,center);
   margin-top: $margen-entre-section;
   margin-bottom:$margen-entre-section;
 
-  .titulos-secciones-menu{
+  .titulo-seleccionada{
       width: 60%;
       text-align: center;
       @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800);     

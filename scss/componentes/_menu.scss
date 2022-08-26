@@ -4,12 +4,20 @@
 
 
 
-.container-titulo-seleccionada{
-    @include flexing(flex,center);
-    margin-top: $margen-entre-section;
+.container-titulo-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:$margen-entre-section;
     margin-bottom:$margen-entre-section;
-
-    .titulo-seleccionada{
+    .container-logo{
+        display: none;
+        margin-bottom: 2em;
+        @media screen and (max-width:648px) {
+          display: flex;
+        }
+    }
+    .titulo-secciones-menu{
         width: 60%;
         text-align: center;
         @include titulos-subtitulos(2rem,("Neutra-Bold", sans-serif),800);     

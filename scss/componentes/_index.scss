@@ -148,12 +148,13 @@
 
 .container-mapa {
     margin-top: $margen-entre-section;
+    margin-bottom: $margen-entre-section;
     @include flexing(flex,center);
     flex-direction: column;
     align-items: center;
-
     .titulos-index {
-      @include titulos-subtitulos(1.2rem,("Neutra-Bold", sans-serif),800); 
+      @include titulos-subtitulos(1.2rem,("Neutra-Bold", sans-serif),800);
+      margin-bottom: 2em;
         @media screen and (max-width:468px) {
           font-size: 1rem;
         }
@@ -163,11 +164,22 @@
 
       }
       .mapa {
-        width: 80%;
+        box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.84);
+        -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.84);
+        -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.84);
+        width: 50%;
         height: 20em;
-        margin: 25px;
+        @media screen and (max-width:648px){
+          margin: 0px;
+          width: 100%;
+          height: 12em;
+        } 
       }
-  }
+      @media screen and (max-width:648px){
+      margin-right: 2em;
+      margin-left: 2em;
+      }
+}
 
 
   

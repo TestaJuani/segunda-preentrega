@@ -3,9 +3,18 @@
 
 
 .container-titulo-galeria{
-    @include flexing(flex,center);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: $margen-entre-section;
     margin-bottom:$margen-entre-section;
+    .container-logo{
+        display: none;
+        margin-bottom: 2em;
+        @media screen and (max-width:648px) {
+          display: flex;
+        }
+    }
 
     .titulos-secciones-galeria {
         width: 60%;
