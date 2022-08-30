@@ -72,13 +72,10 @@
   -webkit-box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.35);
   display: none;
-}
-.header-2 nav {
   width: 80%;
-  display: flex;
   align-items: center;
 }
-.header-2 nav ul {
+.header-2 ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -87,10 +84,10 @@
   padding: 0px;
   margin: 0px;
 }
-.header-2 nav ul .contenedor-logo {
+.header-2 ul .contenedor-logo {
   width: 20%;
 }
-.header-2 nav ul .contenedor-logo .links {
+.header-2 ul .contenedor-logo .links {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,53 +98,53 @@
   font-weight: 900;
   padding: 1em;
 }
-.header-2 nav ul .contenedor-logo .links .fa-solid {
+.header-2 ul .contenedor-logo .links .fa-solid {
   color: black;
   font-size: 2.2rem;
 }
 @media screen and (max-width: 468px) {
-  .header-2 nav ul .contenedor-logo .links .fa-solid {
+  .header-2 ul .contenedor-logo .links .fa-solid {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 320px) {
-  .header-2 nav ul .contenedor-logo .links .fa-solid {
+  .header-2 ul .contenedor-logo .links .fa-solid {
     font-size: 1.5rem;
   }
 }
-.header-2 nav ul .contenedor-logo .links:hover {
+.header-2 ul .contenedor-logo .links:hover {
   background-color: rgba(0, 0, 0, 0.061);
 }
-.header-2 nav ul .contenedor-logo .links:active {
+.header-2 ul .contenedor-logo .links:active {
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 468px) {
-  .header-2 nav ul .contenedor-logo .links {
+  .header-2 ul .contenedor-logo .links {
     font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 320px) {
-  .header-2 nav ul .contenedor-logo .links {
+  .header-2 ul .contenedor-logo .links {
     font-size: 0.5rem;
   }
 }
-.header-2 nav ul #ubicacion-navbar {
+.header-2 ul #ubicacion-navbar {
   background-color: rgba(0, 0, 0, 0.061);
 }
 @media screen and (max-width: 820px) {
-  .header-2 nav ul {
+  .header-2 ul {
     width: 100%;
   }
 }
 @media screen and (max-width: 648px) {
-  .header-2 nav ul {
+  .header-2 ul {
     display: flex;
   }
 }
 @media screen and (max-width: 648px) {
-  .header-2 nav {
+  .header-2 {
     width: 100%;
   }
 }
@@ -1025,6 +1022,43 @@
 .container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs {
   display: flex;
   flex-direction: column;
+}
+.container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs div .disabled-add-dec {
+  display: none;
+}
+.container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs div .add-dec {
+  font-size: 0.9rem;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs div .add-dec:active {
+  box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 320px) {
+  .container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs div .add-dec {
+    font-size: 0.6rem;
+  }
+}
+.container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs div #dec {
+  margin-left: 5px;
+}
+.container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs div .text-add-dec {
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 320px) {
+  .container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs div .text-add-dec {
+    font-size: 0.6rem;
+  }
+}
+.container-hamburguesas-seleccionadas .container-card-seleccionada .container-inputs div #mostrar-cerrado {
+  color: red;
 }
 @media screen and (max-width: 648px) {
   .container-hamburguesas-seleccionadas .container-card-seleccionada {
