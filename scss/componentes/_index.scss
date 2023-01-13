@@ -88,7 +88,7 @@
     margin: 1em;
     width: 50%;
     height: 20em;
-    background-image: url(../multimedia/imagenes/royale-inicio.png);
+    background-image: url(../multimedia/imagenes/prueba1.webp);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -106,25 +106,25 @@
         animation-iteration-count: infinite;
         @keyframes changeImg2 {
             0%{
-              background-image: url(../multimedia/imagenes/onion\ .png);
+              background-image: url(../multimedia/imagenes/prueba.webp);
               background-repeat: no-repeat;
               background-position: 50% 50%;
               background-size: cover;
             }
             25%{
-              background-image: url(../multimedia/imagenes/cheese.png);
+              background-image: url(../multimedia/imagenes/prueba1.webp);
               background-repeat: no-repeat;
               background-position: 50% 50%;
               background-size: cover;
             }
             50%{
-              background-image: url(../multimedia/imagenes/bg\ mc.png);
+              background-image: url(../multimedia/imagenes/prueba.webp);
               background-repeat: no-repeat;
               background-position: 50% 50%;
               background-size: cover;
             }
             100%{
-              background-image: url(../multimedia/imagenes/royale-inicio.png);
+              background-image: url(../multimedia/imagenes/prueba1.webp);
               background-repeat: no-repeat;
               background-position: 50% 50%;
               background-size: cover;
