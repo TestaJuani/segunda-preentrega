@@ -1,4 +1,0 @@
-RewriteCond %{index.html} !-d
-RewriteCond %{index.html}.html -f
-RewriteRule ^(.*)$ $1.html
-#RewriteRule ^([a-z]+)/?$ $1.html [NC] agrega / al final de url html
